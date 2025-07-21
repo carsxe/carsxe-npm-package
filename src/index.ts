@@ -22,6 +22,7 @@ export class CarsXE {
   private buildUrl(endpoint: string, params: Record<string, any>) {
     const url = new URL(`${this.getBaseUrl()}/${endpoint}`);
     url.searchParams.append('key', this.apiKey);
+    url.searchParams.append('source', 'npm');
     for (const [key, value] of Object.entries(params)) {
       if (value !== undefined) {
         url.searchParams.append(key, value);
