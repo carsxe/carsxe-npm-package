@@ -64,6 +64,7 @@ export class CarsXE {
   public async plateImageRecognition(params: PlateImageRecognitionInput) {
     const url = new URL(`${this.getBaseUrl()}/platerecognition`);
     url.searchParams.append('key', this.apiKey);
+    url.searchParams.append('source', 'npm');
     const res = await fetch(url.toString(), {
       method: 'POST',
       headers: {
@@ -79,6 +80,7 @@ export class CarsXE {
   public async vinOcr(params: VinOcrInput) {
     const url = new URL(`${this.getBaseUrl()}/v1/vinocr`);
     url.searchParams.append('key', this.apiKey);
+    url.searchParams.append('source', 'npm');
     const res = await fetch(url.toString(), {
       method: 'POST',
       headers: {
