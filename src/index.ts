@@ -61,6 +61,11 @@ export class CarsXE {
     return res.json();
   }
 
+  public async LienAndTheft(params: VinInput) {
+    const res = await fetch(this.buildUrl('v1/lien-theft', { ...params }));
+    return res.json();
+  }
+
   public async plateImageRecognition(params: PlateImageRecognitionInput) {
     const url = new URL(`${this.getBaseUrl()}/platerecognition`);
     url.searchParams.append('key', this.apiKey);
