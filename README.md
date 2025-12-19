@@ -81,6 +81,8 @@ The CarsXE API provides the following endpoint:
 
 `obdcodesdecoder` – Decode OBD error/diagnostic codes
 
+`lienAndTheft` – Check for liens and theft records by VIN
+
 To use any of these endpoint methods, call the method and provide the necessary parameters, as shown in the following examples:
 
 ```js
