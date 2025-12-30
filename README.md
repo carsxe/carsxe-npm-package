@@ -120,7 +120,7 @@ const ymm = await carsxe.yearMakeModel({ year: '2023', make: 'Toyota', model: 'C
 const obd = await carsxe.obdcodesdecoder({ code: 'P0115' });
 
 // Lien and Theft Check
-const lienTheft = await carsxe.LieLienAndTheft({ vin: '2C3CDXFG1FH762860' });
+const lienTheft = await carsxe.lienAndTheft({ vin: '2C3CDXFG1FH762860' });
 ```
 
 In these examples, each endpoint method is called with the necessary parameters, and the results are returned through a callback function. The callback function receives two arguments: an error object (if an error occurred) and the data returned by the endpoint. The data can then be used in your code as needed.

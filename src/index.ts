@@ -61,7 +61,7 @@ export class CarsXE {
     return res.json();
   }
 
-  public async LienAndTheft(params: VinInput) {
+  public async lienAndTheft(params: VinInput) {
     const res = await fetch(this.buildUrl('v1/lien-theft', { ...params }));
     return res.json();
   }
