@@ -93,7 +93,6 @@ const specs = await carsxe.specs({ vin: 'WBAFR7C57CC811956' }););
 const intVin = await carsxe.internationalVinDecoder({ vin: 'WF0MXXGBWM8R43240' }););
 
 // Market Value (vin required; state, mileage, condition optional)
-const value = await carsxe.marketvalue({ vin: 'WBAFR7C57CC811956' });
 const valueDetailed = await carsxe.marketvalue({ vin: 'WBAFR7C57CC811956', state: 'CA', mileage: '45000', condition: 'clean' });
 
 // History
