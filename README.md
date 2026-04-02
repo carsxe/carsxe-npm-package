@@ -65,7 +65,7 @@ The CarsXE API provides the following endpoint:
 
 `platedecoder` – Decode license plate info (plate, state, country)
 
-`marketvalue` – Estimate vehicle market value based on VIN
+`marketvalue` – Estimate vehicle market value based on VIN (optional: `state`, `mileage`, `condition`)
 
 `history` – Retrieve vehicle history (ownership, accidents, etc.)
 
@@ -92,8 +92,9 @@ const specs = await carsxe.specs({ vin: 'WBAFR7C57CC811956' }););
 // International VIN Decoder
 const intVin = await carsxe.internationalVinDecoder({ vin: 'WF0MXXGBWM8R43240' }););
 
-// Market Value
+// Market Value (vin required; state, mileage, condition optional)
 const value = await carsxe.marketvalue({ vin: 'WBAFR7C57CC811956' });
+const valueDetailed = await carsxe.marketvalue({ vin: 'WBAFR7C57CC811956', state: 'CA', mileage: '45000', condition: 'clean' });
 
 // History
 const history = await carsxe.history({ vin: 'WBAFR7C57CC811956' });

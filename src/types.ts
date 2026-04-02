@@ -3,6 +3,14 @@ export type VinInput = {
   vin: string;
 };
 
+// Input for Market Value endpoint
+export type MarketValueInput = {
+  vin: string;
+  state?: string;
+  mileage?: string;
+  condition?: 'excellent' | 'clean' | 'average' | 'rough';
+};
+
 export type SpecsInput = {
   vin: string;
   deepdata?: string;

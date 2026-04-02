@@ -1,6 +1,7 @@
 import fetch from 'node-fetch';
 import {
   VinInput,
+  MarketValueInput,
   SpecsInput,
   PlateDecoderParams,
   ImageInput,
@@ -36,7 +37,7 @@ export class CarsXE {
     return res.json();
   }
 
-  public async marketvalue(params: VinInput) {
+  public async marketvalue(params: MarketValueInput) {
     const res = await fetch(this.buildUrl('v2/marketvalue', { ...params }));
     return res.json();
   }
