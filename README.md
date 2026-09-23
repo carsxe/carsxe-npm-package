@@ -8,9 +8,18 @@
 
 **CarsXE** is a powerful and developer-friendly API that gives you instant access to a wide range of vehicle data. From VIN decoding and market value estimation to vehicle history, images, OBD code explanations, and plate recognition, CarsXE provides everything you need to build automotive applications at scale.
 
-🌐 **Website:** [https://api.carsxe.com](https://api.carsxe.com)  
-📄 **Docs:** [https://api.carsxe.com/docs](https://api.carsxe.com/docs)  
-📦 **All Products:** [https://api.carsxe.com/all-products](https://api.carsxe.com/all-products)
+🌐 **Website:** [https://carsxe.com](https://carsxe.com)  
+📄 **Docs:** [https://docs.carsxe.com](https://docs.carsxe.com)
+
+### Products
+
+- [Vehicle History](https://carsxe.com/vehicle-history)
+- [Vehicle Plate Decoder](https://carsxe.com/vehicle-plate-decoder)
+- [Vehicle Specifications](https://carsxe.com/vehicle-specifications)
+- [International VIN Decoder](https://carsxe.com/international-vin-decoder)
+- [Vehicle Images](https://carsxe.com/vehicle-images)
+- [Vehicle Recalls](https://carsxe.com/vehicle-recalls)
+- [Vehicle Market Value](https://carsxe.com/vehicle-market-value)
 
 ---
 
@@ -59,31 +68,31 @@ console.log(vehicle.input.vin);
 
 The CarsXE API provides the following endpoint:
 
-`specs` – Decode VIN & get full vehicle specifications
+`specs` – Decode VIN & get full vehicle specifications ([Vehicle Specifications](https://carsxe.com/vehicle-specifications))
 
-`internationalVinDecoder` – Decode VIN with worldwide support
+`internationalVinDecoder` – Decode VIN with worldwide support ([International VIN Decoder](https://carsxe.com/international-vin-decoder))
 
-`platedecoder` – Decode license plate info (plate, state, country)
+`platedecoder` – Decode license plate info (plate, state, country) ([Vehicle Plate Decoder](https://carsxe.com/vehicle-plate-decoder))
 
-`marketvalue` – Estimate vehicle market value based on VIN (optional: `state`, `mileage`, `condition`)
+`marketvalue` – Estimate vehicle market value based on VIN (optional: `state`, `mileage`, `condition`) ([Vehicle Market Value](https://carsxe.com/vehicle-market-value))
 
-`history` – Retrieve vehicle history (ownership, accidents, etc.)
+`history` – Retrieve vehicle history (ownership, accidents, etc.) ([Vehicle History](https://carsxe.com/vehicle-history))
 
-`images` – Fetch images by make, model, year, trim
+`images` – Fetch images by make, model, year, trim ([Vehicle Images](https://carsxe.com/vehicle-images))
 
-`recalls` – Get safety recall data for a VIN
+`recalls` – Get safety recall data for a VIN ([Vehicle Recalls](https://carsxe.com/vehicle-recalls))
 
-`recallsYmm` / `recallsByYmm` – Get safety recalls by year, make, and model (no VIN required)
+`recallsYmm` / `recallsByYmm` – Get safety recalls by year, make, and model (no VIN required) ([Vehicle Recalls](https://carsxe.com/vehicle-recalls))
 
-`recallsBatchSubmit` – Submit a bulk recalls batch (`vins[]` and/or `csv` and/or `csvUrl`, optional `webhookUrl`)
+`recallsBatchSubmit` – Submit a bulk recalls batch (`vins[]` and/or `csv` and/or `csvUrl`, optional `webhookUrl`) ([Vehicle Recalls](https://carsxe.com/vehicle-recalls))
 
-`recallsBatchStatus` – Check bulk recalls batch status by `batchId`
+`recallsBatchStatus` – Check bulk recalls batch status by `batchId` ([Vehicle Recalls](https://carsxe.com/vehicle-recalls))
 
-`recallsBatchResults` – Fetch completed bulk recalls results as JSON by `batchId`
+`recallsBatchResults` – Fetch completed bulk recalls results as JSON by `batchId` ([Vehicle Recalls](https://carsxe.com/vehicle-recalls))
 
-`recallsBatchDownload` – Download completed bulk recalls results as CSV by `batchId`
+`recallsBatchDownload` – Download completed bulk recalls results as CSV by `batchId` ([Vehicle Recalls](https://carsxe.com/vehicle-recalls))
 
-`plateImageRecognition` – Read & decode plates from images
+`plateImageRecognition` – Read & decode plates from images ([Vehicle Plate Decoder](https://carsxe.com/vehicle-plate-decoder))
 
 `vinOcr` – Extract VINs from images using OCR
 
