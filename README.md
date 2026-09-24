@@ -94,6 +94,8 @@ The CarsXE API provides the following endpoint:
 
 `plateImageRecognition` – Read & decode plates from images ([Vehicle Plate Decoder](https://carsxe.com/vehicle-plate-decoder))
 
+<img alt="Plate recognition sample" src="https://imagedelivery.net/moyiiSImjJPI_EZVxNMBBw/f49aed53-d736-4370-f3f4-97418841c800/public" width="280" />
+
 `vinOcr` – Extract VINs from images using OCR
 
 `yearMakeModel` – Query vehicle by year, make, model and trim (optional)
@@ -149,7 +151,7 @@ const batchResults = await carsxe.recallsBatchResults({ batchId: batch.data.batc
 const batchCsv = await carsxe.recallsBatchDownload({ batchId: batch.data.batchId });
 
 // Plate Image Recognition
-const plateImg = await carsxe.plateImageRecognition({ imageUrl: 'https://api.carsxe.com/img/apis/plate_recognition.JPG' });
+const plateImg = await carsxe.plateImageRecognition({ imageUrl: 'https://imagedelivery.net/moyiiSImjJPI_EZVxNMBBw/f49aed53-d736-4370-f3f4-97418841c800/public' });
 
 // VIN OCR from image
 const vinOcr = await carsxe.vinOcr({ imageUrl: 'https://user-images.githubusercontent.com/5663423/30922082-64edb4fa-a3a8-11e7-873e-3fbcdce8ea3a.png' });
