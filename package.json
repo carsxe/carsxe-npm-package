@@ -88,7 +88,7 @@
   "bugs": {
     "url": "https://github.com/carsxe/carsxe-api-npm/issues"
   },
-  "homepage": "https://api.carsxe.com",
+  "homepage": "https://carsxe.com",
   "engines": {
     "node": ">=14"
   },
